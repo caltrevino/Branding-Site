@@ -39,15 +39,6 @@ img {
     max-width: 100%;
 }
 
-.sr-only {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-}
-
 .section {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -120,15 +111,6 @@ nav {
 .card:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transform: translateY(-3px);
-}
-
-.card a::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: ' ';
 }
 
 .content-container {

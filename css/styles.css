@@ -13,7 +13,7 @@ body {
 }
 
 body, p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Montserrat, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -96,16 +96,16 @@ nav {
 
 .card-grid {
     display: grid;
-    column-gap: 7rem;
+    column-gap: 3rem;
     row-gap: 3rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
     position: relative;
     overflow: hidden;
     border: 1px solid gray;
-    border-radius: .5rem;
+    border-radius: 0.25rem;
 }
 
 .card:hover {
@@ -122,8 +122,8 @@ nav {
     content: ' ';
 }
 
-/* Tablet and Under Styles */
-@media screen and (max-width: 600px) {
+/* Mobiles Styles */
+@media screen and (max-width: 500px) {
     * {
         font-size: 16px;
     }
@@ -143,5 +143,12 @@ nav {
     
     .card-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Tablet Styles */
+@media screen and (min-width:499px) and (max-width:900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

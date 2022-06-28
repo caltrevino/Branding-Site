@@ -119,6 +119,11 @@ nav {
     justify-content: space-between;
 }
 
+.about h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .headshots {
     display: flex;

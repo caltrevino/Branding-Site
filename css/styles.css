@@ -119,6 +119,24 @@ nav {
     justify-content: space-between;
 }
 
+
+.headshots {
+    display: flex;
+    align-items: center;
+}
+
+.headshots img {
+    width: 50%;
+    padding: 2rem;
+    border-radius: 2.25rem;
+}
+
+.content-container.about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 /* Mobiles Styles */
 @media screen and (max-width: 500px) {
     * {
@@ -142,6 +160,7 @@ nav {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 
 /* Tablet Styles */
 @media screen and (min-width:499px) and (max-width:900px) {

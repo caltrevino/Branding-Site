@@ -1,5 +1,8 @@
+@import "modal.css";
+
 :root {
     --orange: #f0ac75;
+    --black: #000;
 }
 
 * {
@@ -119,11 +122,15 @@ nav {
     justify-content: space-between;
 }
 
+.container-images img {
+    border: solid 1px var(--black);
+    margin-bottom: 1.5rem;
+}
+
 .about h1 {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .headshots {
     display: flex;
@@ -177,5 +184,11 @@ nav {
 @media screen and (min-width:901px) {
     .content-container>:first-child {
         flex: 0 0 75%;
+    }
+
+    .container-images img {
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

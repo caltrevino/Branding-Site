@@ -1,0 +1,59 @@
+/*Image modal*/
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.733);
+    padding-top: 2rem;
+    animation: zoom 0.3s ease-in-out;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.modal img {
+    height: 95%;
+    object-fit: cover;
+}
+
+.closeBtn {
+    content: url('../images/close.svg');
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.closeBtn:hover {
+    color: rgb(255, 255, 255);
+}
+
+.lightbox {
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .modal img {
+        height: auto;
+        width: 85%;
+        object-fit: cover;
+    }
+
+    .closeBtn {
+        width: 30px;
+    }
+}

@@ -2,12 +2,9 @@
     "name": "branding-site",
     "version": "1.0.0",
     "description": "",
-    "source": "js/index.js",
-    "main": "dist/main.js",
     "scripts": {
-        "start": "parcel index.html",
         "watch": "parcel watch",
-        "build": "parcel build"
+        "build": "parcel build src/index.html --no-optimize"
     },
     "repository": {
         "type": "git",

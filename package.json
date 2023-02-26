@@ -1,0 +1,27 @@
+{
+    "name": "branding-site",
+    "version": "1.0.0",
+    "description": "",
+    "source": "js/index.js",
+    "main": "dist/main.js",
+    "scripts": {
+        "start": "parcel index.html",
+        "watch": "parcel watch",
+        "build": "parcel build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/caltrevino/Branding-Site.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/caltrevino/Branding-Site/issues"
+    },
+    "homepage": "https://github.com/caltrevino/Branding-Site#readme",
+    "devDependencies": {
+        "@parcel/packager-raw-url": "^2.8.3",
+        "@parcel/transformer-webmanifest": "^2.8.3",
+        "parcel": "^2.8.3"
+    }
+}

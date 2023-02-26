@@ -1,4 +1,46 @@
-# VS Code
-.vscode
+#--------------------------
+#  Global gitignore items
+#--------------------------
 
+# OSX
+*.DS_Store
 .DS_Store
+.DS_Store?
+._.DS_Store
+
+# SASS
+/.sass-cache
+.sass-cache*
+config.codekit
+*codekit-config.json
+*.map
+
+# Editors
+*.sw*
+.sw*
+subl
+._*
+*._*
+.subl
+*.subl
+._.*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+.vscode
+*.vscode
+
+# Parcel
+.parcel-cache
+
+# Node
+node_modules
+npm-debug.log
+bower_components/
+.idea/
+
+# Uploads Zip
+*.tgz
+*.gz

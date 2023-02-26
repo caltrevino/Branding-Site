@@ -34,6 +34,7 @@ ehthumbs.db
 
 # Parcel
 .parcel-cache
+dist/
 
 # Node
 node_modules

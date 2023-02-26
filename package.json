@@ -5,7 +5,7 @@
     "browserslist": "> 0.5%, last 25 versions",
     "scripts": {
         "watch": "parcel serve src/index.html",
-        "build": "parcel build src/index.html --no-optimize"
+        "build": "rm -rf dist/* && parcel build src/index.html"
     },
     "repository": {
         "type": "git",
@@ -19,6 +19,7 @@
     "homepage": "https://github.com/caltrevino/Branding-Site#readme",
     "devDependencies": {
         "@parcel/packager-raw-url": "^2.8.3",
+        "@parcel/transformer-sass": "^2.8.3",
         "@parcel/transformer-webmanifest": "^2.8.3",
         "parcel": "^2.8.3"
     }

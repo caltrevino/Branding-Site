@@ -1,9 +1,10 @@
 {
-    "name": "branding-site",
+    "name": "caleighs-branding-site",
     "version": "1.0.0",
     "description": "",
+    "browserslist": "> 0.5%, last 25 versions",
     "scripts": {
-        "watch": "parcel watch",
+        "watch": "parcel serve src/index.html",
         "build": "parcel build src/index.html --no-optimize"
     },
     "repository": {

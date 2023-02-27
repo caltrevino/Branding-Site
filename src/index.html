@@ -22,10 +22,16 @@
     <div class="form">
         <form name="contact" method="POST" action="pages/thank-you" data-netlify="true">
             <p>
-                <label>Your Name: <input type="text" name="name" /></label>
+                <label>Your Name: <input type="text" name="name" required/></label>
             </p>
             <p>
-                <label>Your Email: <input type="email" name="email" /></label>
+                <label>Your Email: 
+                    <input 
+                        type="email" 
+                        name="email" 
+                        pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
+                        required />
+                </label>
             </p>
             <p>
             <label>Message: <textarea name="message"></textarea></label>

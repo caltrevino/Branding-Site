@@ -1,0 +1,58 @@
+@import '../variables';
+
+.hero {
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, $ivory 50%, #fff 50%);
+
+    p {
+        max-width: 440px;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        display: inline-block;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        transition: transform 0.2s ease-in;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+}
+
+.hero-banner {
+    background-color: $olive;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    p {
+        font-style: italic;
+        font-family: $serif;
+        font-size: 1.842rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

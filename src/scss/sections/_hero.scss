@@ -23,7 +23,9 @@ nav {
 
     a {
         display: inline-block;
-        transition: transform .25s ease-in;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        transition: transform 0.2s ease-in;
 
         &:hover {
             transform: translateY(-4px);

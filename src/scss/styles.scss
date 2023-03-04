@@ -2,14 +2,13 @@
 @import "sections/hero";
 @import "sections/about";
 
-:root {
-    --orange: #f0ac75;
-    --black: #000;
-}
-
 * {
     box-sizing: border-box;
     font-size: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {

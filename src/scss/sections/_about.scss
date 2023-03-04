@@ -1,2 +1,44 @@
 @import "../variables";
 
+.about {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+        justify-content: space-between;
+
+        .left {
+            flex: 0 0 400px;
+            width: 400px;
+            height: 487px;
+            background-color: lavender;
+        }
+
+        .middle {
+            flex: 1 0 400px;
+            align-self: center;
+        }
+
+        .right {
+            flex: 0 0 245px;
+            width: 245px;
+            height: 308px;
+            background-color: lavender;
+            align-self: flex-end;
+        }
+    }
+
+    .paragraphs {
+        display: flex;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 8rem;
+    }
+}

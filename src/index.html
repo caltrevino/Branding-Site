@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cal Trevino | Brand Photographer</title>
+    <meta name="description" content="Maximize your brand's impact with our professional branding photography services. Contact us to schedule a consultation today.">
     <link rel="stylesheet" href="scss/styles.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,14 +24,14 @@
         <nav>
             <div class="nav-left">
                 <a href="#about">About</a>
-                <a href="#">Services</a>
+                <a href="#services">Services</a>
             </div>
             <div class="nav-image">
 
             </div>
             <div class="nav-right">
-                <a href="#">Investment</a>
-                <a href="#">Contact</a>
+                <a href="#investment">Investment</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
         <div class="content">
@@ -64,32 +65,62 @@
 
             </div>
         </div>
-        <div class="footer" aria-la>
+        <div class="footer">
             <h3>IT’S TIME FOR YOU TO FLOURISH</h3>
         </div>
     </section>
 
-    <div class="form">
-        <form name="contact" method="POST" action="pages/thank-you" data-netlify="true">
-            <p>
-                <label>Your Name: <input type="text" name="name" required/></label>
-            </p>
-            <p>
-                <label>Your Email: 
-                    <input 
-                        type="email" 
-                        name="email" 
-                        pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
-                        required />
-                </label>
-            </p>
-            <p>
-            <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-            <button type="submit">Send</button>
-            </p>
-        </form>
-    </div>
+    <section class="services" id="services">
+        <div class="cards-container">
+            <div class="cards">
+                <h3>First Impression Headshots</h3>
+            </div>
+            <div class="cards">
+                <h3>Brand Sessions</h3>
+            </div>
+            <div class="cards">
+                <h3>Content Photography</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-image">
+
+    </section>
+
+    <section class="investment" id="investment">
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="form">
+            <form name="contact" method="POST" action="pages/thank-you" data-netlify="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name" required/></label>
+                </p>
+                <p>
+                    <label>Your Email: 
+                        <input 
+                            type="email" 
+                            name="email" 
+                            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
+                            required />
+                    </label>
+                </p>
+                <p>
+                <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                <button type="submit">Send</button>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            Logo
+        </div>
+    </footer>
 </body>
 </html>

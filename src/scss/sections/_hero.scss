@@ -23,12 +23,12 @@ nav {
 
     a {
         display: inline-block;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         transition: transform 0.2s ease-in;
 
         &:hover {
-            transform: translateY(-4px);
+            transform: translateY(-3px);
         }
     }
 }

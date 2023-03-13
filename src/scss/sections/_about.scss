@@ -13,28 +13,25 @@
         justify-content: space-between;
 
         .left {
-            flex: 0 0 400px;
-            width: 400px;
-            height: 487px;
-            background-color: lavender;
         }
 
         .middle {
-            flex: 1 0 400px;
             align-self: center;
+
+            @media screen and (min-width: 700px) {
+                flex: 1 0 400px;
+            }
         }
 
         .right {
-            flex: 0 0 245px;
-            width: 245px;
-            height: 308px;
-            background-color: lavender;
             align-self: flex-end;
         }
     }
 
     .paragraphs {
-        display: flex;
+        @media screen and (min-width: 700px) {
+            display: flex;
+        }
     }
 
     .footer {

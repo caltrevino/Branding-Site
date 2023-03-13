@@ -2,7 +2,7 @@
     "name": "caleighs-branding-site",
     "version": "1.0.0",
     "description": "",
-    "browserslist": "> 0.5%, last 25 versions",
+    "browserslist": "> 0.5%, last 20 versions",
     "scripts": {
         "watch": "parcel serve src/index.html",
         "build": "rm -rf dist/* && parcel build src/index.html"

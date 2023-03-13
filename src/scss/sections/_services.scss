@@ -6,11 +6,33 @@
     background-color: $ivory;
 
     .cards-container {
-        max-width: 1200px;
+        max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+        @media screen and (min-width:499px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: baseline;
+            column-gap: 1.5rem;
+        }
+
+        @media screen and (min-width:499px) and (max-width:900px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 500px) {
+            display: block;
+        }
+    }
+
+    .cards {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
     }
 }

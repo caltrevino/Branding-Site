@@ -3,10 +3,11 @@
 @import "sections/about";
 @import "sections/services";
 @import "sections/footer";
+@import "sections/bg-image";
+@import "sections/investment";
 
 * {
     box-sizing: border-box;
-    font-size: 18px;
 }
 
 html {
@@ -17,6 +18,7 @@ body {
     margin: 0;
     color: black;
     letter-spacing: 2px;
+    font-size: 18px;
 }
 
 body, p {
@@ -37,6 +39,7 @@ h1 {
         font-family: $sans-serif;
         text-transform: uppercase;
         letter-spacing: 8px;
+        font-size: 18px;
     }
 }
 h2 { font-size: 1.842rem; }
@@ -57,13 +60,23 @@ img {
     max-width: 100%;
 }
 
+li {
+    &::marker {
+        color: $olive;
+    }
+}
+
 
 .w-container {
-    max-width: 70rem;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.border {
+    border-radius: 5px;
 }
 
 /* Mobiles Styles */

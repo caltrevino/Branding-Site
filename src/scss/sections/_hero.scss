@@ -47,7 +47,16 @@ nav {
         font-family: $serif;
         font-size: 1.842rem;
         margin-top: 0;
-        margin-bottom: 0;
+        
+        @media screen and (min-width: 600px) {
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 599px) {
+            &:last-of-type {
+                margin-bottom: 0.5rem;
+            }
+        }
     }
     
     .content {

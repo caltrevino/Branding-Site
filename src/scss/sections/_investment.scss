@@ -13,6 +13,10 @@
         text-align: left;
         margin-bottom: 0;
         margin-right: 0.5rem;
+        
+        @media screen and (max-width: 600px) {
+            padding-left: 1.5rem;
+        }
     }
 
     li {
@@ -38,15 +42,20 @@
 
     .content {
         background-color: $ivory;
-        text-align: center;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
         width: 100%;
-
+        
         @media screen and (min-width: 800px) {
             margin-left: 3rem;
+            text-align: center;
+        }
+        
+        @media screen and (min-width: 600px) {
+            padding-left: 3rem;
+            padding-right: 3rem;
         }
     }
 

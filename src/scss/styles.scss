@@ -66,7 +66,6 @@ li {
     }
 }
 
-
 .w-container {
     max-width: 1400px;
     margin-left: auto;
@@ -77,6 +76,18 @@ li {
 
 .border {
     border-radius: 5px;
+}
+
+.desktop-only {
+    @media screen and (max-width: 599px) {
+        display: none;
+    }
+}
+
+.mobile-only {
+    @media screen and (min-width: 600px) {
+        display: none;
+    }
 }
 
 /* Mobiles Styles */

@@ -5,6 +5,10 @@
     padding-bottom: 4rem;
     background-color: $ivory;
 
+    @media screen and (max-width: 599px) {
+        padding-bottom: 2.5rem;
+    }
+
     .cards-container {
         max-width: 1400px;
         margin-left: auto;
@@ -33,6 +37,8 @@
 
         @media screen and (max-width: 600px) {
             &:not(:last-of-type) {
+                padding-bottom: 2rem;
+                border-bottom: 2px solid rgba($olive, 0.5);
                 margin-bottom: 4rem;
             }
         }

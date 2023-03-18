@@ -8,29 +8,21 @@
 
     .content {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         column-gap: 2rem;
-        justify-content: space-between;
-
-        .left {
-        }
 
         .middle {
             align-self: center;
 
             @media screen and (min-width: 700px) {
                 flex: 1 0 400px;
+                max-width: 750px;
             }
         }
 
         .right {
             align-self: flex-end;
-        }
-    }
-
-    .paragraphs {
-        @media screen and (min-width: 700px) {
-            display: flex;
         }
     }
 

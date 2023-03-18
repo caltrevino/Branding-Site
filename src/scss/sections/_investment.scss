@@ -3,6 +3,8 @@
 .investment {
     h2 {
         text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
     }
 
     h3 {
@@ -23,19 +25,59 @@
         margin-bottom: 0.5rem;
     }
 
+    .w-container {
+        max-width: 1250px;
+    }
+
+    .cards {
+        @media screen and (min-width:650px) and (max-width:849px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1.5rem;
+            row-gap: 1.5rem;
+        }
+
+        @media screen and (max-width: 649px) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 4rem;
+        }
+    }
+
     .card {
         margin-top: 4rem;
         margin-bottom: 4rem;
 
-        @media screen and (min-width: 800px) {
+        img {
+            object-fit: cover;
+        }
+
+        @media screen and (min-width:650px) and (max-width:849px) {
+            &:last-of-type {
+                grid-column: 1 / 2 span;
+                max-width: 660px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media screen and (min-width: 850px) {
             display: flex;
         }
 
-        @media screen and (max-width: 799px) {
+        @media screen and (max-width: 849px) {
+            height: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 0;
+            margin-bottom: 0;
+
             img {
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 2rem;
+                max-height: 300px;
+                object-position: top;
+                width: 100%;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
             }
         }
     }
@@ -44,18 +86,23 @@
         background-color: $ivory;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        padding-top: 2rem;
         padding-bottom: 2rem;
+        padding-top: 2rem;
         width: 100%;
         
-        @media screen and (min-width: 800px) {
+        @media screen and (min-width: 850px) {
             margin-left: 3rem;
-            text-align: center;
-        }
-        
-        @media screen and (min-width: 600px) {
             padding-left: 3rem;
             padding-right: 3rem;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 849px) {
+            height: 100%;
+
+            h3 {
+                margin-top: 0;
+            }
         }
     }
 
@@ -69,5 +116,33 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+    }
+
+    .package {
+        background-color: $silverish;
+        color: white;
+
+        @media screen and (max-width: 849px) {
+            margin-top: 3rem;
+        }
+
+        h3 {
+            color: white;
+            font-family: $sans-serif;
+            font-style: italic;
+            font-weight: 300;
+
+            @media screen and (min-width: 650px) {
+                font-size: 2rem;
+            }
+        }
+
+        .content-package {
+            max-width: 950px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
     }
 }

@@ -16,14 +16,14 @@
         padding-right: 1rem;
         padding-left: 1rem;
 
-        @media screen and (min-width:499px) {
+        @media screen and (min-width:599px) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             align-items: baseline;
             column-gap: 1.5rem;
         }
 
-        @media screen and (min-width:499px) and (max-width:900px) {
+        @media screen and (min-width:599px) and (max-width:900px) {
             grid-template-columns: repeat(2, 1fr);
         }
 

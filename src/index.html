@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cal Trevino | Brand Photographer</title>
+    <meta name="description" content="Maximize your brand's impact with our professional branding photography services. Contact us to schedule a consultation today.">
     <link rel="stylesheet" href="scss/styles.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,20 +21,33 @@
 </head>
 <body>
     <section class="hero">
-        <nav>
+        <nav class="desktop-only">
             <div class="nav-left">
                 <a href="#about">About</a>
-                <a href="#">Services</a>
+                <a href="#services">Services</a>
             </div>
             <div class="nav-image">
 
             </div>
             <div class="nav-right">
-                <a href="#">Investment</a>
-                <a href="#">Contact</a>
+                <a href="#investment">Investment</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
-        <div class="content">
+
+        <nav class="mobile-only">
+            <label for="burger" class="burger">
+                <input id="burger" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="nav-content">
+                <a href="#investment">Investment</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <div class="content w-container">
             <h1>Cal Trevino <span>Photography</span></h1>
             <p>An endearing brand photographer ready to show you how to flourish</p>
         </div>
@@ -50,7 +64,7 @@
     <section class="about" id="about">
         <div class="content">
             <div class="left">
-                
+                <img class="border" src="images/cal-portrait.jpg" alt="" width="398">
             </div>
             <div class="middle">
                 <h2>Welcome, I’m Cal</h2>
@@ -60,36 +74,136 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat id nulla sollicitudin imperdiet non et eros. </p>
                 </div>
             </div>
-            <div class="right">
-
-            </div>
         </div>
-        <div class="footer" aria-la>
+        <div class="footer">
             <h3>IT’S TIME FOR YOU TO FLOURISH</h3>
         </div>
     </section>
 
-    <div class="form">
-        <form name="contact" method="POST" action="pages/thank-you" data-netlify="true">
-            <p>
-                <label>Your Name: <input type="text" name="name" required/></label>
-            </p>
-            <p>
-                <label>Your Email: 
-                    <input 
-                        type="email" 
-                        name="email" 
-                        pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
-                        required />
-                </label>
-            </p>
-            <p>
-            <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-            <button type="submit">Send</button>
-            </p>
-        </form>
-    </div>
+    <section class="services" id="services">
+        <div class="cards-container">
+            <div class="cards">
+                <img class="border" src="images/ira-portrait.jpg" alt="Headshot of a Professional Woman" width="350">
+                <h3>First Impression Headshots</h3>
+            </div>
+            <div class="cards">
+                <img class="border" src="images/cait-m-portrait.jpg" alt="Branding photo of woman" width="350">
+                <h3>Brand Sessions</h3>
+            </div>
+            <div class="cards">
+                <img class="border" src="images/sarah-f-portrait.jpg" alt="Gradutation photo with foliage in back" width="350">
+                <h3>Content Photography</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-image">
+        <img src="images/beach-engagement.jpg" alt="">
+    </section>
+
+    <section class="investment" id="investment">
+        <div class="w-container">
+            <h2>LET’S TALK <i>INVESTMENT</i></h2>
+            <div class="cards">
+                <div class="card">
+                    <img class="border" src="images/guy-portrait.jpg" alt="" width="380">
+                    <div class="content">
+                        <div class="content-top">
+                            <h3>FIRST IMPRESSION HEADSHOTS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat id nulla sollicitudin imperdiet non et eros. Aliquam non sodales turpis. Ut nec commodo lectus, mattis blandit dolor.</p>
+                        </div>
+                        <div class="content-bottom">
+                            <ul>
+                                <li>15 minute session</li>
+                                <li>5 images </li>
+                                <li>Delivered within 3-5 business days</li>
+                            </ul>
+                            <div>$95</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="border" src="images/sarah-h-portrait.jpg" alt="" width="380">
+                    <div class="content">
+                        <div class="content-top">
+                            <h3>THE ROOTS SESSION</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat id nulla sollicitudin imperdiet non et eros. Aliquam non sodales turpis. Ut nec commodo lectus, mattis blandit dolor.</p>
+                        </div>
+                        <div class="content-bottom">
+                            <ul>
+                                <li>Questionnaire</li>
+                                <li>1 hour session</li>
+                                <li>25 images</li>
+                                <li>1 location</li>
+                                <li>1-2 outfits</li>
+                                <li>Delivered within 7 business days</li>
+                            </ul>
+                            <div>$300</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="border" src="images/cait-m-portrait-2.jpg" alt=""  width="380">
+                    <div class="content">
+                        <div class="content-top">
+                            <h3>THE BLOOM SESSION</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat id nulla sollicitudin imperdiet non et eros. Aliquam non sodales turpis. Ut nec commodo lectus, mattis blandit dolor.</p>
+                        </div>
+                        <div class="content-bottom">
+                            <ul>
+                                <li>Questionnaire</li>
+                                <li>15 minute on site planning</li>
+                                <li>2 hour session</li>
+                                <li>45 images</li>
+                                <li>Up to 3 locations</li>
+                                <li>Up to 3 outfits</li>
+                                <li>Delivered within 7 business days</li>
+                                <li>Extras Coverage: $275 + 15 images per hour</li>
+                            </ul>
+                            <div>$625</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package">
+                <div class="content-package">
+                    <h3>Don’t see a package right for you?</h3>
+                    <p>For information on content, team and expanded branding packages please feel free to reach out to Cal Trevino Photography via email. We would love to work with your brand to curate a package that will truly guide you to be your most authentic self and help you flourish!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="form">
+            <form name="contact" method="POST" action="pages/thank-you" data-netlify="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name" required/></label>
+                </p>
+                <p>
+                    <label>Your Email: 
+                        <input 
+                            type="email" 
+                            name="email" 
+                            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" 
+                            required />
+                    </label>
+                </p>
+                <p>
+                <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                <button type="submit">Send</button>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            Logo
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,10 +1,13 @@
 @import "variables";
 @import "sections/hero";
 @import "sections/about";
+@import "sections/services";
+@import "sections/footer";
+@import "sections/bg-image";
+@import "sections/investment";
 
 * {
     box-sizing: border-box;
-    font-size: 18px;
 }
 
 html {
@@ -15,6 +18,7 @@ body {
     margin: 0;
     color: black;
     letter-spacing: 2px;
+    font-size: 18px;
 }
 
 body, p {
@@ -29,12 +33,21 @@ h1, h2, h3, h4 {
 h1 { 
     font-size: 5rem; 
     margin-top: 10rem;
+    font-weight: 700;
 
     & span {
         display: block;
+        margin-top: 0.5rem;
         font-family: $sans-serif;
         text-transform: uppercase;
-        letter-spacing: 8px;
+        letter-spacing: 3px;
+        font-size: 16px;
+        font-weight: 500;
+        transform: scaleY(1.25);
+
+        @media screen and (min-width: 600px) {
+            font-size: 18px;
+        }
     }
 }
 h2 { font-size: 1.842rem; }
@@ -55,22 +68,43 @@ img {
     max-width: 100%;
 }
 
+li {
+    &::marker {
+        color: $olive;
+    }
+}
 
 .w-container {
-    max-width: 70rem;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
+.border {
+    border-radius: 5px;
+}
+
+.desktop-only {
+    @media screen and (max-width: 599px) {
+        display: none;
+    }
+}
+
+.mobile-only {
+    @media screen and (min-width: 600px) {
+        display: none;
+    }
+}
+
 /* Mobiles Styles */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     * {
         font-size: 16px;
     }
     
-    h1 { font-size: 2rem; }
+    h1 { font-size: 2.7rem; }
     h2 { font-size: 1.4rem; }
     h3 { font-size: 1.2rem; }
 

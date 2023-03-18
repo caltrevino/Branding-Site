@@ -6,7 +6,15 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(to right, $ivory 50%, #fff 50%);
+    background: url("../images/cait-m-portrait.jpg"), linear-gradient(to right, $ivory 50%, rgba(255, 255, 255, 0) 50%);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-blend-mode: lighten;
+
+    @media screen and (max-width: 599px) {
+        padding-top: 0;
+        padding-bottom: 12rem;
+    }
 
     p {
         max-width: 440px;
@@ -18,17 +26,28 @@
 
 nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+    @media screen and (min-width: 600px) {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 599px) {
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        background-color: $red-wood;
+    }
 
     a {
         display: inline-block;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         transition: transform 0.2s ease-in;
 
         &:hover {
-            transform: translateY(-4px);
+            transform: translateY(-3px);
         }
     }
 }
@@ -44,7 +63,16 @@ nav {
         font-family: $serif;
         font-size: 1.842rem;
         margin-top: 0;
-        margin-bottom: 0;
+        
+        @media screen and (min-width: 600px) {
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 599px) {
+            &:last-of-type {
+                margin-bottom: 0.5rem;
+            }
+        }
     }
     
     .content {
@@ -54,5 +82,76 @@ nav {
         max-width: 900px;
         margin-left: auto;
         margin-right: auto;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.burger {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    cursor: pointer;
+
+    input {
+        display: none;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        height: 2.5px;
+        width: 100%;
+        background: $ivory;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+
+    span:nth-of-type(1) {
+        top: 0px;
+        transform-origin: left center;
+    }
+
+    span:nth-of-type(2) {
+        top: 50%;
+        transform: translateY(-50%);
+        transform-origin: left center;
+    }
+
+    span:nth-of-type(3) {
+        top: 100%;
+        transform-origin: left center;
+        transform: translateY(-100%);
+    }
+
+    input:checked {
+        & ~ span:nth-of-type(1) {
+            transform: rotate(45deg);
+            top: 0px;
+            left: 5px;
+        }
+
+        & ~ span:nth-of-type(2) {
+            width: 0%;
+            opacity: 0;
+        }
+
+        & ~ span:nth-of-type(3) {
+            transform: rotate(-45deg);
+            top: 22px;
+            left: 5px;
+        }
+    }
+}
+
+.mobile-only {
+    .nav-content {
+        display: none;
     }
 }
